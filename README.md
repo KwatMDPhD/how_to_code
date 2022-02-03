@@ -1,4 +1,4 @@
-# coding
+# how_to_code
 
 Coding cheatsheet :keyboard:
 
