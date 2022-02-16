@@ -38,6 +38,12 @@ Never access global variable within a function.
 
 When setting julia function keyword arguments, use `;`.
 
+`()` is faster than `[]`.
+
+`error` is faster than `@assert`.
+
+Interpolate; `"This is $variable"`.
+
 ## Name
 
 ### General
