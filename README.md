@@ -44,6 +44,8 @@ When setting julia function keyword arguments, use `;`.
 
 Interpolate; `"This is $variable"`.
 
+Avoid printing empty, spacing lines because orchestrating them is painful.
+
 ## Name
 
 ### General
