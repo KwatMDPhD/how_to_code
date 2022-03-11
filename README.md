@@ -34,9 +34,7 @@ Introduce close to use.
 
 Avoid collisions only in the same scope.
 
-Never access global variable within a function.
-
-When setting julia function keyword arguments, use `;`.
+Avoid accessing global variables within functions.
 
 `()` is faster than `[]`.
 
@@ -44,7 +42,7 @@ When setting julia function keyword arguments, use `;`.
 
 Interpolate; `"This is $variable"`.
 
-Avoid printing empty, spacing lines because orchestrating them is painful.
+Avoid printing empty, spacing lines.
 
 ## Name
 
@@ -62,29 +60,13 @@ Differentiate with 1 character => `tha`, `thb`, `th1_`, `th2_`.
 
 ### Object
 
-Boolean => (general) `bo`, (specific for "is good") `go`.
+Matrix (feature-by-sample categorical matrix) => `fe_x_sa_x_ca`.
 
-Vector => (general) `ve`, (specific for "continuous vector") `co_`.
+Dictionary (name => new name) => `na_ne`.
 
-Matrix => (general) `ma`, (specific for "feature-by-sample categorical matrix") `ca_fe_sa`.
-
-N dimensional numbers => (general) `nu___`, (specific for "N-dimensional binary numbers") `bi___`.
-
-Index => (general) `ie` (`in` and `id` are reserved names), (specific for "selecting index") `ies`.
-
-Dictionary => (general) `di`, (specific for "name => new name") `na_ne`.
-
-Dictionary mapping 1 key to 1+ values => ke*va*
-
-1+ dictionaries => _ke_va (appending _ is confusing)
+1+ dictionaries => \_ke_va
 
 `GLOBAL_VARIABLE`.
-
-Pandas DataFrame => (general) `da`, (specific for "DataFrame of feature-by-sample categorical numbers") `ca_fe_sa` (same as naming matrix).
-
-Pandas Series => (general) `se`, (specific for "Series of names indexing new names") `na_ne` (same as naming dictionary).
-
-Plotly colorscale => (general) `colorscale` (match Plotly naming), (specific for "node colorscale") `colorscalen`.
 
 ### Function
 
@@ -96,6 +78,10 @@ Never use plural => `list_person(pe_)`.
 
 Keep the default name.
 
-For a new name, use `[_a-z]`.
+For a new name, use `[._0-9a-z]`.
 
-End directory path with "/" => `"directory/"`.
+Matrix => `feature_x_sample_x_value.tsv`
+
+## Master
+
+[Regex](https://stackoverflow.com/questions/22937618/reference-what-does-this-regex-mean/22944075#22944075)
