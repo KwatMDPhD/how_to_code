@@ -1,7 +1,5 @@
 # how_to_code
 
-Coding cheatsheet :keyboard:
-
 ## Philosophy
 
 Be specific.
