@@ -2,6 +2,8 @@
 
 ## Philosophy
 
+Less is more.
+
 Be specific.
 
 Be explicit.
@@ -10,15 +12,13 @@ Assume context.
 
 Keep related things close.
 
-Less is more.
-
 Optimize for compression (do not repeat).
 
 ## Practice
 
 Count 1, 2, ...
 
-Prioritize simpler data structures.
+Use simpler data structures.
 
 Instead of `>` and `>=`, use `<` and `<=`.
 
@@ -38,7 +38,7 @@ Avoid accessing global variables within functions.
 
 `error` is faster than `@assert`.
 
-Interpolate; `"This is $variable"`.
+Interpolate; `"This is $variable".`.
 
 Avoid printing empty, spacing lines.
 
@@ -62,17 +62,17 @@ Matrix (feature-by-sample categorical matrix) => `fe_x_sa_x_ca`.
 
 Dictionary (name => new name) => `na_ne`.
 
-1+ dictionaries => \_ke_va
+1+ dictionaries => ke_va\_\_
 
 `GLOBAL_VARIABLE`.
 
 ### Function
 
-Never abbreviate => `get_information_coefficient(ve1, ve2)`.
+Avoid abbreviating => `get_information_coefficient(ve1, ve2)`.
 
-Never use plural => `list_person(pe_)`.
+Avoid plurals => `list_person(pe_)`.
 
-### IO
+### Input and output
 
 Keep the default name.
 
